@@ -13,6 +13,8 @@ def total
                 else
                   @price1 / @price2.to_f
                 end  
+              else
+                "URLが正しくありません"
               end
 end
 end
