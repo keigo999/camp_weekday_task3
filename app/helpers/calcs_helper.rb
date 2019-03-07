@@ -1,17 +1,17 @@
 module CalcsHelper
-def total
-    @total =  case @oprator
+def calculation
+    @total =  case @operator
               when "addition"
-                @price1 + @price2
+                @num1 + @num2
               when "subtraction"
-                @price1 - @price2
+                @num1 - @num2
               when "multiplication"
-                @price1 * @price2
+                @num1 * @num2
               when "division"
-                if @price2 == 0 
+                if @num2 == 0 
                   "0では割れません"
                 else
-                  @price1 / @price2.to_f
+                  @num1 / @num2
                 end  
               else
                 "URLが正しくありません"
