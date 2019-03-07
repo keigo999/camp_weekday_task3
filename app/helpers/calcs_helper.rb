@@ -1,5 +1,5 @@
 module CalcsHelper
-def calculation
+  def calculation
     @total =  case @operator
               when "addition"
                 @num1 + @num2
@@ -16,5 +16,5 @@ def calculation
               else
                 "URLが正しくありません"
               end
-end
+  end
 end
